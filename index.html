@@ -7,8 +7,8 @@
 
   <!-- Primary SEO Meta Tags -->
   <title>Kethan Dosapati | AI Engineer Portfolio</title>
-  <meta name="description" content="Portfolio of Kethan Dosapati, an AI engineer building production-ready GenAI tools, chatbots, computer vision APIs, and Python packages." />
-  <meta name="keywords" content="Kethan Dosapati, Kethan Kiran Dosapati, D Kethan, Dosapati Kethan, DKethan, dkethan, AI Engineer, Machine Learning, Generative AI, Multi-Agent AI, Prompt Engineering, Python Developer, Web Scraping, API Development, Computer Vision, Wrapper4AI, UI4AI, Kethan Dosapati Portfolio" />
+  <meta name="description" content="Portfolio of Kethan Dosapati, an AI and data engineer building production-ready GenAI tools, RAG and agent systems, PySpark and Airflow data pipelines on GCP, and Python packages." />
+  <meta name="keywords" content="Kethan Dosapati, Kethan Kiran Dosapati, D Kethan, Dosapati Kethan, DKethan, dkethan, AI Engineer, Data Engineer, PySpark, Apache Airflow, BigQuery, Google Cloud, American Express, Machine Learning, Generative AI, RAG, Multi-Agent AI, Prompt Engineering, Python Developer, Web Scraping, API Development, Computer Vision, Wrapper4AI, UI4AI, Kethan Dosapati Portfolio" />
   <meta name="author" content="Kethan Dosapati" />
   <meta name="application-name" content="Kethan Dosapati Portfolio" />
   <meta name="apple-mobile-web-app-title" content="Kethan Dosapati" />
@@ -19,10 +19,10 @@
   <meta name="google-site-verification" content="OGYdo1dRANcIHixd3IMehgqKYTwDNxTdDMfM6Z2a3nI" />
 
   <!-- Additional SEO -->
-  <meta name="geo.region" content="US-NJ" />
-  <meta name="geo.placename" content="New Jersey, USA" />
+  <meta name="geo.region" content="US-AZ" />
+  <meta name="geo.placename" content="Phoenix, Arizona, USA" />
   <meta name="dcterms.created" content="2024-01-01" />
-  <meta name="dcterms.modified" content="2026-05-14" />
+  <meta name="dcterms.modified" content="2026-09-24" />
 
   <!-- Canonical & Sitemap -->
   <link rel="canonical" href="https://dkethan.github.io/portfolio/" />
@@ -93,19 +93,25 @@
           "alternateName": ["Kethan Kiran Dosapati", "D Kethan", "Dosapati Kethan", "DKethan", "dkethan", "kethandosapati"],
           "url": "https://dkethan.github.io/portfolio/",
           "image": "https://dkethan.github.io/portfolio/assets/profile.jpg",
-          "jobTitle": "AI Engineer",
-          "description": "AI Engineer specializing in production-ready GenAI tools, chatbots, computer vision APIs, and Python packages",
+          "jobTitle": "AI and Data Engineer",
+          "description": "AI and Data Engineer specializing in production-ready GenAI tools, RAG and multi-agent systems, PySpark and Airflow data pipelines on GCP, and Python packages",
           "email": "kethandosapati@gmail.com",
           "address": {
             "@type": "PostalAddress",
-            "addressRegion": "New Jersey",
+            "addressLocality": "Phoenix",
+            "addressRegion": "Arizona",
             "addressCountry": "USA"
           },
           "knowsAbout": [
             "Artificial Intelligence","Machine Learning","Generative AI","Computer Vision",
-            "Python Programming","API Development","Web Scraping","Multi-Agent AI"
+            "Python Programming","API Development","Web Scraping","Multi-Agent AI",
+            "Retrieval-Augmented Generation","Data Engineering","PySpark","Apache Airflow","Google Cloud Platform","BigQuery"
           ],
-          "worksFor": { "@type": "Organization", "name": "Open to Opportunities" },
+          "worksFor": { "@type": "Organization", "name": "American Express" },
+          "alumniOf": [
+            { "@type": "CollegeOrUniversity", "name": "Pace University" },
+            { "@type": "CollegeOrUniversity", "name": "REVA University" }
+          ],
           "sameAs": [
             "https://github.com/DKethan",
             "https://pypi.org/user/dkethan/",
@@ -604,6 +610,9 @@
     .role-title{font-family:var(--serif),serif;font-size:clamp(24px,2.6vw,32px);font-weight:400;letter-spacing:-.01em;line-height:1.1;color:var(--fg);margin:0}
     .role-title .org{font-style:italic;color:var(--fg-mute)}
     .role-body{font-size:15px;color:var(--fg-mute);max-width:62ch;line-height:1.55;margin:0}
+    .role-points{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none;max-width:72ch}
+    .role-point{display:flex;gap:12px;align-items:flex-start;font-size:15px;color:var(--fg-mute);line-height:1.55}
+    .role-point .pt-mark{flex-shrink:0;margin-top:9px;width:5px;height:5px;border-radius:50%;background:var(--accent);box-shadow:0 0 7px rgba(200,255,63,.65)}
     .role-stack{font-family:var(--mono),monospace;font-size:10.5px;color:var(--fg-dim);letter-spacing:.04em;display:flex;flex-wrap:wrap;gap:4px}
     .role-stack span{padding:3px 8px;border:1px solid var(--line);border-radius:4px}
     .role-coord{font-family:var(--mono),monospace;font-size:10px;color:var(--fg-mute);text-transform:uppercase;letter-spacing:.1em;text-align:right;line-height:1.5}
@@ -647,11 +656,12 @@
     .pkg-links{display:flex;gap:6px}
 
     /* ─────────── STACK ─────────── */
-    .stack-cols{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-card)}
+    .stack-cols{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--bg-card)}
+    @media (max-width:1180px){.stack-cols{grid-template-columns:repeat(3,1fr)}}
     @media (max-width:880px){.stack-cols{grid-template-columns:repeat(2,1fr)}}
-    .stack-col{padding:24px 24px 28px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+    .stack-col{padding:24px 24px 28px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:14px;min-width:0}
     .stack-col:last-child{border-right:0}
-    @media (max-width:880px){.stack-col{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}}
+    @media (max-width:1180px){.stack-col{border-right:1px solid var(--line);border-bottom:1px solid var(--line)}}
     .stack-col h4{font-family:var(--mono),monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-dim);margin:0;display:flex;justify-content:space-between;align-items:center}
     .stack-col h4 span{color:var(--accent);font-weight:500}
     .stack-list{display:flex;flex-direction:column;gap:1px}
@@ -812,17 +822,17 @@
         title: 'My Teacher',
         badge: 'AI Education Platform',
         domain: 'my-teacher-ai.vercel.app',
-        year: '2026',
+        year: '2025 to Now',
         role: 'Full-stack AI Engineer',
         tagline: 'An AI tutor that actually understands your material.',
         desc: 'A full-stack AI learning platform I built end to end. Upload any document and it turns into a study companion: ask questions in plain English, generate flashcards on demand, break a topic into a study plan, and get visual aids when text alone is not enough.',
         bullets: [
-          'Grounded document Q&A so answers come from the source, not from thin air',
-          'Auto-generated flashcards, topic breakdowns, and study plans on demand',
-          'Mobile-first React UI on top of a FastAPI and MongoDB backend',
-          'Shipped live on Vercel with JWT auth and protected routes',
+          'Grounded document Q&A, flashcards, topic breakdowns, study plans, and visual aids on demand',
+          'Modular Pydantic-based services on a FastAPI and MongoDB backend, with a mobile-first React UI',
+          'JWT auth with refresh tokens and role-based access control, shipped through Vercel deployment workflows',
+          'Answers come from your source material, not from thin air',
         ],
-        stack: ['FastAPI','Python','MongoDB','React','JWT','Vercel'],
+        stack: ['FastAPI','Python','Pydantic','MongoDB','React','JWT','Vercel'],
         links: [
           ['Open live app', 'https://my-teacher-ai.vercel.app/index', 'primary'],
           ['GitHub', 'https://github.com/krutrimamedhassu/my-teacher'],
@@ -835,17 +845,17 @@
         title: 'Arogyamandiram',
         badge: 'AI Health & Wellness',
         domain: 'arogyamandiram.vercel.app',
-        year: '2026',
+        year: '2025 to Now',
         role: 'Full-stack AI Engineer',
         tagline: 'Health tracking that feels like texting a friend.',
-        desc: 'A health and wellness platform you talk to. Log how you feel in natural language and the system extracts structured signals, turns them into trends, and surfaces GPT-powered insights you can act on. Built end to end on Next 14 with proper auth and platform controls.',
+        desc: 'A health and wellness platform you talk to. Log calories, water, weight, sleep, and workouts in natural language and the system extracts structured signals, turns them into trends, and surfaces personalized daily insights from GPT-4o-mini. Built end to end on Next 14 with proper auth and platform controls.',
         bullets: [
-          'Natural-language logging that turns sentences into structured health data',
-          'GPT-powered insights and weekly summaries grounded in your own history',
-          'Next.js 14, TypeScript, and NextAuth on top of MongoDB Atlas',
-          'Live in production with secure platform controls end to end',
+          'Natural-language logging for calories, water, weight, sleep, and workouts, with GPT-4o-mini daily insights',
+          'Streaks, XP, badges, and guided BMR and TDEE onboarding to keep you coming back',
+          'JWT auth and AES-256-GCM encrypted API-key storage on Next.js 14, TypeScript, and MongoDB Atlas',
+          'Insights and summaries grounded in your own history',
         ],
-        stack: ['Next.js 14','TypeScript','MongoDB Atlas','NextAuth','OpenAI'],
+        stack: ['Next.js 14','TypeScript','MongoDB Atlas','NextAuth','OpenAI','GPT-4o-mini'],
         links: [
           ['Open live app','https://arogyamandiram.vercel.app/', 'primary'],
           ['GitHub','https://github.com/utsaaham/arogyamandiram'],
@@ -1063,48 +1073,95 @@
 
     const ROLES = [
       {
-        when: '2025 to Now', loc: 'Chicago, IL', coord:'41.88°N, 87.62°W',
+        when: '2026', loc: 'Phoenix, AZ', coord:'33.45°N, 112.07°W',
+        title: 'Data Engineer', org: 'American Express',
+        points: [
+          'Helped migrate enterprise data pipelines from traditional platforms to the Lumi GCP platform using PySpark, Dataproc, BigQuery, and Cloud Storage.',
+          'Developed and managed Apache Airflow and Cloud Composer DAGs with the Lumi SDK to orchestrate data processing, loading, and Pub/Sub-triggered workflows.',
+          'Supported automated deployments through Lumi CI/CD and GitHub Actions, including Python packaging, environment configuration, and GCP releases.',
+          'Explored adding Lumi documentation to a GitHub Copilot knowledge base so it understands platform workflows and gives more context-aware help.',
+        ],
+        stack: ['Python','PySpark','Apache Airflow','Cloud Composer','Dataproc','BigQuery','Cloud Storage','Pub/Sub','GitHub Actions','Copilot'],
+      },
+      {
+        when: '2025 to 2026', loc: 'Chicago, IL', coord:'41.88°N, 87.62°W',
         title: 'Founding AI Engineer', org: 'Cornerstone Tech',
-        body: 'Architected the geospatial routing system that powers trucking-permit automation. Integrated OSRM and Google Maps for origin and destination resolution, route continuity, and validation. Led infrastructure, deployment, and end-to-end integration across web, mobile, and backend.',
+        points: [
+          'Independently architected a geospatial routing system using OSRM and Google Maps APIs for origin-destination resolution, distance calculation, and route continuity across statewide trucking permits.',
+          'Implemented route validation, segment deduplication, and road-classification rules, raising routing accuracy from roughly 45-50% to 90% across web, mobile, and backend.',
+          'Owned infrastructure, deployment, and end-to-end integration for a permit automation platform used by two clients and about 20 users.',
+        ],
         stack: ['Python','FastAPI','OSRM','Google Maps','Docker'],
       },
       {
         when: '2025', loc: 'Chicago, IL', coord:'41.88°N, 87.62°W',
         title: 'AI Engineer', org: 'Cornerstone Tech',
-        body: 'Designed the initial LLM-powered routing engine that converted unstructured permit documents into structured route data, which lifted accuracy by 70 to 80 percent over the previous manual workflow. Built the multi-format ingestion pipeline for PDFs, images, and scans.',
+        points: [
+          'Designed an LLM-powered document-to-route pipeline that converted unstructured permit documents into structured routing data, improving accuracy by 70-80% over the prior manual workflow.',
+          'Built multi-format document ingestion and parsing for PDFs, images, and scanned permits, enabling consistent route extraction across input formats.',
+        ],
         stack: ['Python','FastAPI','LLMs','OSRM'],
       },
       {
         when: '2025', loc: 'New York, NY', coord:'40.71°N, 74.01°W',
         title: 'AI Research Intern', org: 'Pace University',
-        body: 'Shipped a business-matching platform end to end. FastAPI services for ingestion, LLM Q&A, chatbot APIs, and ranking. About 90% top-5 buyer-seller match relevance. React frontend with protected routes and a live AWS deployment on a custom domain.',
-        stack: ['Python','FastAPI','React','Redux','MongoDB','OpenAI','AWS'],
+        points: [
+          'Developed FastAPI services for document ingestion, LLM-powered Q&A, company matching, teaser generation, conversational APIs, and email automation for a live, revenue-generating business-matching platform.',
+          'Developed a ranking algorithm that generated top-five buyer-seller matches with about 90% relevance against benchmarks reviewed by domain specialists.',
+          'Automated ingestion and normalization of UK company, employee, LinkedIn, Instagram, and Facebook data into MongoDB using Playwright and Selenium.',
+          'Implemented React features for protected routing, Redux state management, localization, and an AI chat interface.',
+          'Containerized the full-stack application with Docker and deployed it on AWS under a live custom domain.',
+        ],
+        stack: ['Python','FastAPI','React','Redux','MongoDB','Playwright','Selenium','OpenAI','Docker','AWS'],
       },
       {
         when: '2024', loc: 'Hyderabad, India', coord:'17.39°N, 78.49°E',
         title: 'Data Engineer Associate, AI Engineer', org: 'Datalabs Corporation',
-        body: 'Built LLM-powered document intelligence workflows for grounded Q&A over enterprise documents. Developed a multilingual content pipeline. Mentored teammates on LLM workflows and AI product architecture.',
+        points: [
+          'Developed proof-of-concept LLM document-intelligence workflows for grounded question answering across enterprise documents.',
+          'Built a multilingual web-scraping and data-processing pipeline for Instagram, YouTube, and Facebook content used in AI-assisted content generation.',
+          'Trained and mentored a team of 14 engineers on LLM workflow design, API development, and AI product architecture.',
+        ],
         stack: ['Python','FastAPI','Pandas','Selenium','OpenAI','MongoDB','AWS'],
       },
       {
         when: '2024', loc: 'Visakhapatnam, India', coord:'17.69°N, 83.22°E',
         title: 'AI Engineer Intern', org: 'Kairos',
-        body: 'Built a diagnostic AI agent that analyzed frontend logs, identified root causes, and recommended fixes, cutting resolution time by about half. Contributed to a no-code chatbot builder with OpenAPI ingestion and multi-agent orchestration.',
-        stack: ['Python','FastAPI','React','OpenAI','Vector DBs','Docker','AWS'],
+        points: [
+          'Developed a client-requested proof-of-concept diagnostic agent that analyzed frontend logs and error traces, identified likely root causes, and recommended fixes.',
+          'Extended a no-code chatbot with OpenAPI specification ingestion and multi-agent orchestration to streamline client onboarding.',
+          'Built a client-requested computer-vision proof of concept that converted images into structured JSON and returned query results in under 10 seconds.',
+        ],
+        stack: ['Python','FastAPI','React','OpenAI','Vector DBs','Computer Vision','Docker','AWS'],
       },
       {
         when: '2023 to 2024', loc: 'Visakhapatnam, India', coord:'17.69°N, 83.22°E',
         title: 'ML and Prompt Engineer Intern', org: 'Kairos',
-        body: 'Built a RAG-based document Q&A system with embedding pipelines, vector retrieval, and citation-backed responses. Built an NLP chatbot for Western Union and an address verification system that hit 100% accuracy on the target set.',
-        stack: ['Python','FastAPI','React','OpenAI','Embeddings','Docker'],
+        points: [
+          'Built a retrieval-augmented generation pipeline for document question answering using embeddings, vector search, and citation-backed responses.',
+          'Co-developed an NLP chatbot for Western Union using intent classification and rule-based dialogue management.',
+          'Designed an address verification system and validated it against the client\'s target dataset.',
+        ],
+        stack: ['Python','FastAPI','React','OpenAI','Embeddings','NLP','Docker'],
+      },
+      {
+        when: '2023 to 2024', loc: 'Leadership', coord:'',
+        title: 'Founder', org: 'D Studios',
+        points: [
+          'Built and managed AI-assisted content publishing workflows for entertainment and OTT updates across Instagram, X, Threads, Facebook, and YouTube.',
+          'Created automation pipelines for content aggregation, captioning, voiceovers, subtitles, and multi-platform publishing.',
+          'Managed a team of three responsible for source verification, content preparation, and release workflows.',
+        ],
+        stack: ['Python','Automation','LLMs','Content pipelines'],
       },
     ];
 
     const STACK_COLS = [
-      { h:'Languages', items:['Python','TypeScript','JavaScript','SQL','Dart','GDScript','Bash'] },
-      { h:'AI and ML', items:['OpenAI','Gemini','Anthropic','LangChain','RAG','Agents and MCP','Embeddings','Vector search','Fine-tuning','Hugging Face','PyTorch','TensorFlow / Keras','OpenCV','MediaPipe'] },
-      { h:'Stack',     items:['FastAPI','React and Next','Node','MongoDB','Postgres','Supabase','Vector DBs','Tailwind','MUI','Streamlit','Gradio','Flutter','NextAuth','JWT'] },
-      { h:'Ops',       items:['Docker','AWS','Google Cloud','Vercel','Render','GitHub Actions','CI/CD','Linux','Playwright','Selenium','Git / Git LFS','MCP server'] },
+      { h:'Languages', items:['Python','SQL','TypeScript','JavaScript','Dart','GDScript','Bash'] },
+      { h:'AI and ML', items:['LLMs','OpenAI','Gemini','Anthropic','LangChain','RAG','Agents and MCP','Multi-agent systems','Embeddings','Vector search','NLP','Computer vision','Prompt engineering','Fine-tuning','Hugging Face','PyTorch','TensorFlow / Keras','OpenCV','MediaPipe'] },
+      { h:'Data',      items:['PySpark','ETL / ELT','Apache Airflow','Cloud Composer','Dataproc','BigQuery','Cloud Storage','Pub/Sub','MongoDB','PostgreSQL','Supabase'] },
+      { h:'Stack',     items:['FastAPI','Pydantic','React and Next','Node','Vector DBs','Tailwind','MUI','Streamlit','Gradio','Flutter','NextAuth','JWT'] },
+      { h:'Ops',       items:['Docker','Google Cloud','AWS (S3, EC2, ELB, CodePipeline)','Vercel','Render','HF Spaces','GitHub Actions','CI/CD','Linux','Playwright','Selenium','Git / Git LFS','GitHub','Bitbucket','Postman','OSRM','Google Maps APIs','MCP server'] },
     ];
 
     const PACKAGES = [
@@ -1479,9 +1536,9 @@
           <div className="hero-text">
             <div className="hero-eyebrow">
               <span className="dot"></span>
-              <b>AI Engineer</b>
+              <b>AI and Data Engineer</b>
               <span className="sep">·</span>
-              <span>New Jersey</span>
+              <span>Phoenix, AZ</span>
               <span className="sep">·</span>
               <span>Open to GenAI Engineer, Forward Deployed Engineer, Data Engineer</span>
             </div>
@@ -1490,7 +1547,7 @@
               <span className="ht-last">Dosapati</span>
             </h1>
             <p className="hero-tagline">
-              AI Engineer | End-to-End Systems Design | Gen AI, RAG, Agents, MCP, LLM Orchestration | Full-Stack (Frontend, Backend, Database, Deployment) | CI/CD | DevOps | GitHub
+              AI Engineer | Data Engineer (PySpark, Airflow, GCP) | End-to-End Systems Design | Gen AI, RAG, Agents, MCP, LLM Orchestration | Full-Stack (Frontend, Backend, Database, Deployment) | CI/CD | DevOps | GitHub
             </p>
             <div className="hero-actions">
               <a className="btn btn-primary magnetic" href={'#contact'} data-cursor>
@@ -1519,7 +1576,7 @@
       const rows = [
         ['06','years building'],
         ['12','shipped projects'],
-        ['04','companies'],
+        ['05','companies'],
         ['02','PyPI packages'],
         ['500','downloads and counting'],
       ];
@@ -1546,10 +1603,13 @@
           </div>
           <div className="about-wrap">
             <dl className="about-meta">
-              <div><dt>Based</dt><dd>New Jersey, USA</dd></div>
-              <div><dt>Role</dt><dd>AI Engineer, end-to-end systems</dd></div>
-              <div><dt>Focus</dt><dd>GenAI, RAG, Agents, MCP, LLM orchestration</dd></div>
-              <div><dt>Stack</dt><dd>Python, FastAPI, React, Postgres, AWS, CI/CD</dd></div>
+              <div><dt>Based</dt><dd>Phoenix, Arizona, USA</dd></div>
+              <div><dt>Currently</dt><dd>Data Engineer, <span className="accent">American Express</span></dd></div>
+              {/* <div><dt>Role</dt><dd>AI Engineer, end-to-end systems</dd></div> */}
+              <div><dt>Focus</dt><dd>GenAI, RAG, Agents, MCP, LLM orchestration, data pipelines</dd></div>
+              {/* <div><dt>Stack</dt><dd>Python, PySpark, Airflow, FastAPI, React, Postgres, GCP, AWS, CI/CD</dd></div> */}
+              <div><dt>Master's</dt><dd>MS Data Science, Pace University, 2026 · CGPA 3.95</dd></div>
+              <div><dt>Bachelor's</dt><dd>BTech CS (AI and ML), REVA University, 2024 · GPA 8.78</dd></div>
               <div><dt>Open to</dt><dd>AI Engineer, GenAI Engineer, ML / LLM Engineer, Founding Engineer, Forward Deployed Engineer, Solutions Engineer, AI Data Engineer</dd></div>
               <div><dt>Languages</dt><dd>English, Telugu, Hindi</dd></div>
             </dl>
@@ -1906,7 +1966,11 @@
                 <div className="role-when"><b>{r.when}</b>{r.loc}</div>
                 <div className="role-main">
                   <h3 className="role-title">{r.title} <span className="org">· {r.org}</span></h3>
-                  <p className="role-body">{r.body}</p>
+                  <ul className="role-points">
+                    {r.points.map((pt,j)=>(
+                      <li className="role-point" key={j}><span className="pt-mark"></span><span>{pt}</span></li>
+                    ))}
+                  </ul>
                   <div className="role-stack">{r.stack.map(s=><span key={s}>{s}</span>)}</div>
                 </div>
               </div>
@@ -2041,13 +2105,13 @@
       useEffect(()=>{
         const tick = ()=>{
           const d = new Date();
-          setT(d.toLocaleTimeString('en-US',{timeZone:'America/New_York',hour12:false,hour:'2-digit',minute:'2-digit'}) + ' ET');
+          setT(d.toLocaleTimeString('en-US',{timeZone:'America/Phoenix',hour12:false,hour:'2-digit',minute:'2-digit'}) + ' MST');
         };
         tick(); const id = setInterval(tick,1000); return ()=>clearInterval(id);
       },[]);
       return (
         <footer className="footer">
-          <span><b>© 2026 Kethan Dosapati</b> <span className="footer-long">Designed and built in New Jersey.</span></span>
+          <span><b>© 2026 Kethan Dosapati</b> <span className="footer-long">Designed and built in Phoenix.</span></span>
           <span className="right footer-clock"><span className="dot"></span> Available now · {t}</span>
         </footer>
       );
